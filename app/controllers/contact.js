@@ -1,7 +1,8 @@
+var MONGO_CONFIG = require('../config/mongo-config.js');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/simple-api');
 var contactSchema = require('../models/contact');
 
+mongoose.connect(MONGO_CONFIG.connection);
 
 //Controller dealing with requests to do with contact alteration
 var contactController = function(app){
