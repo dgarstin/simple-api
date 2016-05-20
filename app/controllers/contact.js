@@ -1,4 +1,4 @@
-var MONGO_CONFIG = require('../config/mongo-config.js');
+var MONGO_CONFIG = require('../../config/mongo-config.js');
 var mongoose = require('mongoose');
 var contactSchema = require('../models/contact');
 
